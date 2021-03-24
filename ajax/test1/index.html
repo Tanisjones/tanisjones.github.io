@@ -9,8 +9,8 @@
 <script>
 
   fetch('prova.txt')
-    .then(x => console.log(x))
-    .then(y => console.log(y));
+    .then(resposta => resposta.text())
+    .then(text => console.log(text));
   
 </script>
  
