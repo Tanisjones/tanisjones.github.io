@@ -1,1 +1,4 @@
-{'titol': 'Hola', 'missatge': 'Bona tarda a tothom!'}
+{
+  "titol": "Hola",
+  "missatge": "Bona tarda a tothom!"
+}
