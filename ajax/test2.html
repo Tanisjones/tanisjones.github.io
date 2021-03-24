@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+ 
+<script>
+  async function fetchData() {
+    let resposta = await fetch('prova.txt');
+    let text = await resposta.text();
+    console.log(text);
+  }
+
+fetchData();
+ 
+</body>
+</html>
