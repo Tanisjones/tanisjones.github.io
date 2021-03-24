@@ -10,7 +10,7 @@
  
 <script>
   async function fetchData() {
-    const resposta = await fetch('prova.txt');
+    const resposta = await fetch('prova.json');
     const text = await resposta.json();
     return text;
   }
