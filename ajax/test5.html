@@ -20,10 +20,10 @@
     .addEventListener("click", () => {
 
               
-        fetchData().then( text => {
+        fetchData().then( json => {
           document
             .getElementById("change_text")
-            .innerHTML = text;
+            .innerHTML = json.missatge;
         });
              
      });
