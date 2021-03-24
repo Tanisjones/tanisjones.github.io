@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p id="change_text">My first paragraph.</p>
+
+<input type="button" value="Click Me!" id="the_button">
+  
+ 
+<script>
+  function fetchData() {
+    
+      fetch('prova.json')
+        .then(resposta => resposta.json())
+        .then(json => {
+      
+             document
+              .getElementById("change_text")
+              .innerHTML = json.missatges[0];
+        
+        })
+        .catch(error => console.log(error));
+  }
+    
+  document
+    .getElementById("the_button")
+    .addEventListener("click", fetchData);
+         
+</script>
+ 
+</body>
+</html>
