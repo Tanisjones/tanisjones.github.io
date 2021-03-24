@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p id="change_text">My first paragraph.</p>
+
+ 
+<script>
+  async function fetchData() {
+    const resposta = await fetch('prova.txt');
+    const text = await resposta.text();
+    return text;
+  }
+
+fetchData().then( text => {
+            document
+              .getElementById("change_text")
+              .innerHTML = text;
+});
+                 
+ </script>
+ 
+</body>
+</html>
