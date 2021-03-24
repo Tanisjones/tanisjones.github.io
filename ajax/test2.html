@@ -8,12 +8,15 @@
  
 <script>
   async function fetchData() {
-    let resposta = await fetch('prova.txt');
-    let text = await resposta.text();
-    console.log(text);
+    const resposta = await fetch('prova.txt');
+    const text = await resposta.text();
+    return text;
   }
 
-fetchData();
+fetchData().then( text => {
+ console.log(text);
+};
+                 
  </script>
  
 </body>
