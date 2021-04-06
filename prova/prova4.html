@@ -17,14 +17,14 @@
     .addEventListener("click", () => {
                 
           fetch('missatge.json')
-          .then(resposta => resposta.json())
-          .then(json => {
-                document
-                  .getElementById("principal")
-                  .innerHTML = json.missatge;
+            .then(resposta => resposta.json())
+            .then(json => {
+                  document
+                    .getElementById("principal")
+                    .innerHTML = json.missatge;
 
-           })
-          .catch(error => console.log(error));
+             })
+            .catch(error => console.log(error));
           });
              
      });
