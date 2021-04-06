@@ -16,18 +16,17 @@
     .getElementById("the_button")
     .addEventListener("click", () => {
                 
-          fetch('missatge.json')
+    	fetch('missatge.json')
             .then(resposta => resposta.json())
             .then(json => {
                   document
                     .getElementById("principal")
                     .innerHTML = json.missatge;
 
-             })
+            })
             .catch(error => console.log(error));
-          });
-             
-     });
+    });
+         
          
 </script>
   
